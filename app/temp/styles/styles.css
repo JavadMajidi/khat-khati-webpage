@@ -468,6 +468,14 @@ body {
   color: #333;
 }
 
+body ::-moz-selection{
+  background:#9E9E9E;
+}
+
+body ::selection{
+  background:#9E9E9E;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -497,12 +505,33 @@ img {
 }
 
 .top-section__title {
-  font-size: 5.8rem;
+  font-size: 5.5rem;
+  color: #424242;
   margin-bottom: auto;
 }
 
 .top-section__subtitle {
   font-size: 1.5rem;
-  font-weight: 200;
   margin-top: 0;
+  font-weight: 200;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn{
+  background-color: #424242;
+  color: #E65100;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+}
+
+.btn--orange{
+  background-color: #7CB342;
+}
+
+.btn--large{
+  font-size: 1.25rem;
+  padding: 1.1rem 1.9rem;
 }

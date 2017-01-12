@@ -1,4 +1,7 @@
 body {
+  ::selection{
+    background:#9E9E9E;
+  }
   font-family: 'AFSANEH', sans-serif;
   src: url('./app/assets/fonts/AFSANEH.ttf');
   color: #333;
