@@ -1,6 +1,6 @@
 /*mixins must be added with import command in ./app/assets/styles/styles.css file*/
 @define-mixin atSmall {
-  @media (min-width: 530px){
+  @media (min-width: 640px){
     @mixin-content;
   }
 }

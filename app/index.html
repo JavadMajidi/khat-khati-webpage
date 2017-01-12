@@ -23,7 +23,12 @@
   </header>
 
   <div class="top-section">
-    <img class="top-section__top-image" src="assets/images/main-picture02.png" alt="شب خط">
+    <picture>
+      <source srcset="assets/images/main-picture-medium-cut.png 1920w, assets/images/main-picture-medium-cut-hi-dpi 3840w" media="(min-width:640px)">
+      <source srcset="assets/images/main-picture-large-cut.png" media="(min-width:990px)">
+      <source srcset="assets/images/main-picture-larger-cut.png" media="(min-width:1380px)">
+      <img src="assets/images/main-picture-small-cut.png" alt="small cut of top image">
+    </picture>
     <div class="top-section__text-content">
       <h1 class="top-section__title">شب خط ..</h1>
       <h2 class="top-section__subtitle">شب خط بزم سیاه و سپیدی است که پیچ در پیچ ذهنی آبستن از خیال را پیموده و شب ها روی کاغذ نقش می‌بندند</h2>
