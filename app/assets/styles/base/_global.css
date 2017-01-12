@@ -1,5 +1,5 @@
 body {
-  ::selection{
+  ::selection{   /*changing the highlight text color*/
     background:#9E9E9E;
   }
   font-family: 'AFSANEH', sans-serif;

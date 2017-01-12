@@ -468,11 +468,11 @@ body {
   color: #333;
 }
 
-body ::-moz-selection{
+body ::-moz-selection{/*changing the highlight text color*/
   background:#9E9E9E;
 }
 
-body ::selection{
+body ::selection{/*changing the highlight text color*/
   background:#9E9E9E;
 }
 
@@ -480,6 +480,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*mixins must be added with import command in ./app/assets/styles/styles.css file*/
+
+/*s7l17*/
 
 /*_large-hero*/
 
@@ -497,26 +501,54 @@ img {
 .top-section__text-content {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
   left: 0;
   width: 100%;
   text-align: center;
 }
 
 .top-section__title {
-  font-size: 5.5rem;
+  font-size: 2.9rem;
   color: #424242;
-  margin-bottom: auto;
+  margin: 0;
+}
+
+@media (min-width: 530px) {
+
+  .top-section__title {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .top-section__title {
+    font-size: 6.5rem;
+  }
 }
 
 .top-section__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 0;
   font-weight: 200;
   max-width: 28rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 530px) {
+
+  .top-section__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .top-section__subtitle {
+    font-size: 1.6rem;
+  }
 }
 
 .btn{
