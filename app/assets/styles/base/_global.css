@@ -2,12 +2,14 @@ body {
   ::selection{   /*changing the highlight text color*/
     background:#9E9E9E;
   }
-  font-family: 'AFSANEH', sans-serif;
-  src: url('./app/assets/fonts/AFSANEH.ttf');
-  color: #333;
+
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -462,12 +462,6 @@ template {
 
 /*s5l11*/
 
-body {
-  font-family: 'AFSANEH', sans-serif;
-  src: url('./app/assets/fonts/AFSANEH.ttf');
-  color: #333;
-}
-
 body ::-moz-selection{/*changing the highlight text color*/
   background:#9E9E9E;
 }
@@ -481,6 +475,10 @@ img {
   height: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*mixins must be added with import command in ./app/assets/styles/styles.css file*/
 
 /*s7l17*/
@@ -488,8 +486,16 @@ img {
 /*_large-hero*/
 
 .top-section {
+  /*border-bottom: 1px  solid $color1Gray; /*line under the night image*/
   position: relative;
+  font-family: 'AFSANEH', sans-serif;
+  src: url('./app/assets/fonts/AFSANEH.ttf');
+  color: #333;
 
+}
+
+.top-section__image{
+  display: block;
 }
 
 .top-section__top-image{
@@ -511,13 +517,20 @@ img {
 }
 
 .top-section__title {
-  font-size: 3.9rem;
+  font-size: 2.9rem;
   color: #424242;
   margin: 0;
 }
 
 .top-section__title--dots{
   color: #E65100;
+}
+
+@media( min-width: 400px) {
+
+  .top-section__title {
+    font-size: 3.8rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -559,11 +572,27 @@ img {
   }
 }
 
+.top-section__second-header{
+  position: relative;
+  font-family: 'AFSANEH', sans-serif;
+  src: url('./app/assets/fonts/AFSANEH.ttf');
+  color: #E65100;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 640px) {
+
+  .top-section__second-header {
+    font-size: 1.8rem;
+  }
+}
+
 .btn{
   background-color: #424242;
   color: #E65100;
   text-decoration: none;
-  padding: .2rem .6rem;
+  padding: .6rem .6rem;
   display: inline-block;
   position: absolute;
   top: 17px;
@@ -585,4 +614,82 @@ img {
   display: none;
   font-size: 1rem;
   padding: .6rem .6rem;
+}
+
+.wrapper {
+
+  overflow: hidden; /*s8l22*/
+  padding-left: 18px;
+  padding-right: 18px;
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.page-text-section{
+  direction: rtl;
+  font-size: .85rem;
+  text-align: center;
+
+}
+
+@media (min-width: 640px) {
+
+  .page-text-section {
+    font-size: 1rem;
+  }
+}
+
+.page-text-section__text{
+  font-family: 'IRYekan', sans-serif;
+  src: url('./app/assets/fonts/IRYekan.ttf');
+  font-size: .7rem;
+  color: #333;
+  line-height: 150%;
+  text-align: justify;
+}
+
+@media (min-width: 640px) {
+
+  .page-text-section__text {
+    font-size: .85rem;
+  }
+}
+
+@media (min-width: 990px) {
+
+  .page-text-section__text {
+    font-size: .9rem;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row--gutters {/*s8l22*/
+  margin-right: -60px;
+}
+
+.row--gutters > div {
+  padding-right: 60px;
+}
+
+@media (min-width: 990px) {
+
+  .row__medium-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row__medium-8 {
+    float: left;
+    width: 66.66%;
+  }
 }

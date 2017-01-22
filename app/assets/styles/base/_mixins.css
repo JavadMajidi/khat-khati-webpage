@@ -1,4 +1,10 @@
 /*mixins must be added with import command in ./app/assets/styles/styles.css file*/
+@define-mixin atSmaller {
+  @media( min-width: 400px){
+    @mixin-content;
+  }
+}
+
 @define-mixin atSmall {
   @media (min-width: 640px){
     @mixin-content;
@@ -14,5 +20,13 @@
 @define-mixin atLarge {
   @media (min-width: 1280px){
     @mixin-content;
+  }
+}
+
+@define-mixin clearfix{
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }

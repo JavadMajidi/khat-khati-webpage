@@ -1,0 +1,29 @@
+.page-text-section{
+  direction: rtl;
+  font-size: .85rem;
+  text-align: center;
+
+
+  @mixin atSmall{
+    font-size: 1rem;
+  }
+
+  &__text{
+    font-family: 'IRYekan', sans-serif;
+    src: url('./app/assets/fonts/IRYekan.ttf');
+    font-size: .7rem;
+    color: #333;
+
+    line-height: 150%;
+    text-align: justify;
+
+    @mixin atSmall{
+      font-size: .85rem;
+    }
+
+    @mixin atMedium{
+      font-size: .9rem;
+    }
+  }
+
+}
